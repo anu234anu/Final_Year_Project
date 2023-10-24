@@ -1,0 +1,16 @@
+ pyttsx3
+ datetime
+ speech_recognition
+ webbrowser
+ os
+ pyautogui
+ psutil
+ pyjokes
+ nltk
+ numpy
+ flask
+ json
+ random
+ time
+ sklearn
+ tensorflow

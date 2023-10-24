@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Digital Bot</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+
+
+    }
+
+    .form-btn{
+        display: block;
+        margin: 0 auto;
+        padding: 0.5rem 3em;
+        font-size: 1.0rem;
+        text-transform: uppercase;
+        background: #e63946;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+    h1, h2, h3{
+        margin-bottom: 0.5em;
+        font-weight: 1000;
+        margin-left: 100px;
+        
+    }
+
+    .form{
+        float: none;
+        width: 20%;
+        margin-top: 500px;
+        margin-left: 950px;
+        height: auto;
+        background-color: aliceblue;
+        padding: 0.5rem 3em;
+        z-index: 100;
+    }
+    .form-group{
+        display: block;
+        width: 300px;
+        height: 50px;
+        margin-right: 200px;
+    }
+
+    .text{
+        margin-left: 850px;
+        font-weight: 500;
+        padding: 0.5rem;
+        z-index: 100;
+    }
+
+    
+    
+
+    
+</style>
+</head>
+<body>
+    
+                 
+            <form action="{{ url_for('predict_response')}}" method="post" class='form'>
+                <h1>Digibot</h1>
+                <div class="form-group">
+                    <label for="input" style="font-size: 20px;" >Text:</label>
+                    <input type="text"  id="userData" name="userInput" placeholder="message" style="font-size:15pt;height:38px;width:200px;" size="20"
+                    onclick="record()">
+                </div>
+                <script>
+                    function record(){
+                        var recognition = new webkitSpeechRecognition();
+                        recognition.lang = "en-GB";
+                        recognition.onresult = function(event){
+                            document.getElementById('userData').value = event.results[0][0].transcript;
+                        }
+                        recognition.start();
+                    }
+                </script>
+                
+                <button type="submit" onclick="displayresponse()" class='form-btn'>Send</button>
+            </form>
+            <div class="text">
+                
+                {% if response_array %}
+                
+                <h1 style="color: #181a19;"><textarea name="" id="" cols="61" rows="7">Response: {{response_array}}</textarea></h1>
+                <br>
+                {% endif%}
+            </div>
+
+            
+</body>
+</html>
+
+
+

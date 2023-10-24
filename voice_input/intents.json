@@ -1,0 +1,391 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"]
+        },
+        {"tag": "courses",
+         "patterns": ["I want to know more about the courses offered.", "What are the courses offered here?", "What are the courses offered", "Offered courses", "courses offered", "courses available", "what are the branches"],
+         "responses": ["In ADCET, we offer following courses in B.Tech: Computer Science & Engineering, Aeronautical  Engineering, Food Technology, Electrical  Engineering, Civil  Engineering, Mechanical  Engineering, Artificial Intelligence and Data Science, Computer Sci & Engg.(Internet of Things & Cyber Security Including Block Chain Technology), Agreeculture Engineering. I hope it helps you."]
+        },
+        {"tag": "admission_dates",
+         "patterns": ["what is the date for admission.?", "When is the admission?", "When will the admission process start?", "Which date the admissions will start?" ],
+         "responses": ["We are yet to confirm the date. Please look at our website to be updated"]
+        },
+        {"tag": "contact",
+         "patterns": ["I want the phone number of the hod of CSE department.", "I want the phone number for the hod of Food department.", "I want the phone number for the hod of Electrical department.", "I want the phone number for the hod of Aeronautical department.", "I want the phone number for the hod of civil department.", "I want the phone number for the hod of Mechanical department.", "where can I find contacts?", "I want the contact of the Administrative Cell.", "where can I find contacts of Admission council?"],
+         "responses": ["You can contact to Prof. S. B. Hivarekar(Head-Admission) Ph: 9689895057  ,  8600600708, Mr. D. V. Adsul (Administrative Officer) Ph : 9960674000", "You can mail to: profrak@rediffmail.com"]
+        },
+        {"tag": "session_commencement",
+         "patterns": ["When will the new term start?", "When will the new session start?", "What is the commencement date for the new session", "When will the lectures start?", "When will the academic term start?", "When will the classes begin?", "When will the classes of newcomers start?", "From when do the new students have to come?"],
+         "responses": ["Exact date has not been decided yet, but the new academic term will start in July.", "Department will let you know."]
+        },
+        {"tag": "placement",
+         "patterns": ["Which companies come for placement?", "I would like to inquire about the placement", "I would like to inquire about the campus placement", "What are the opportunities for the placement?", "What are the placement packages?", "How are the placement offered to the student?"],
+         "responses": ["Placement opportunities for the students are excellent!. We have our own dedicated placement cell which helps and trains the students for the interview. Many well-known companies come for the campus placement as recruiters. You may find more infromation about our placement in our webpage. Here is the link!"]
+        },
+        {"tag": "cutoff",
+         "patterns": ["what is the cutoff for the admission?", "what is the cutoff for the admission in computer engineering?", "what is the cutoff for the admission in IT?", "what is the cutoff for the admission in ec?", "what is the cutoff for the admission in electrical engineering?", "what is the cutoff for the admission in civil engineering?", "what is the cutoff for the admission in mechanical engineering?"],
+         "responses": ["We are not sure as each year the criterias are different. Please refer to the previous cutoffs to get an idea."]
+        },
+        {"tag": "confusion",
+         "patterns": ["i am confused about which branch to select", "I am confused which branch should I take.", "I do not know which branch should I take.", "I want to know which branch is for me.", "I don't know which branch is for me."],
+         "responses": ["Ok. Then tell me about what you are interested in. For eg: 'You like Computers', 'The machines is your thing', etc", "You can contact with our faculties for guidance."]
+        },
+        {"tag": "more_confusion",
+         "patterns": ["I do not know in what I am interested in.", "I do not know if I want to do engineering", "I cannot decide if I want to do engineering", "I am confused about engineering."],
+         "responses": ["Well, it is not necessary that engineering is the only career option for you. There are many more lines of work to explore. One must not regret of what they choose to build their career upon, after all, it is your future. You must think over again as you still have time."]
+        },
+        {"tag": "engineering_confusion",
+         "patterns": ["I do not know about engineering.", "What is engineering?", "What does an Engineer do?"],
+         "responses": ["It is a branch of science and technology which deals with thinking, designing and building logical solutions. Engineers apply the principles of science and mathematics to develop economical solutions to technical problems."]
+        },
+        {"tag": "computer",
+         "patterns": ["I like computers.", "I love to code", "I like coding", "I am interested in web development", "I am interested in machine learning", "I am interested in artificial intelligence", "I want to become android developer", "I like to work with big data", "I am interested in android development", "I am interested in IOS development", "I want to know more about processors and compilers"],
+         "responses": ["I am getting what you are interested in. You may be interested to be in Computer Science or IT department of engineering. If you want to know more, please type 'I want to know more about computer science' or 'I want to know more about IT'"]
+        },
+        {"tag": "computer/IT_engineer",
+         "patterns": ["Who is a computer engineer?", "Who is an IT engineer?"],
+         "responses": ["Computer engineers or IT engineers focus on innovation—making computing systems safer, faster and more powerful. They develop, test, install, configure and troubleshoot computer hardware and software."]
+        },
+        {"tag": "computer_sciene_details",
+         "patterns": ["What is computer engineering?", "What is IT engineering?", "I want to know more about computer science.", "I want to know more about computer engineering", "I want to know more about computer science engineering", "I want to know more about IT", "I want to know more about IT engineering"],
+         "responses": ["Computer Engineering or IT grouped under the name Computer Science. The main goal is to configure the hardware and the software to bring a modern solution to a problem. It has wide variety of fields to explore in it along with many opportunities. If you are interested then I will sign you up for our newsletter. Are you interested?"]
+        },
+        {"tag": "ec_electrical",
+         "patterns": ["I like interfacing", "I am interested in circuits", "I am interested in configuring different systems", "I like networking", "I am interested in networking", "I am interested in wirelesss networks", "I am interested in robotics", "I am interested in embedded systems", "I want to learn about microprocessors", "I want to learn about microcontrollers"],
+         "responses": ["I am getting what you are interested in. You may be interested to be in Electrical or EC department of engineering. If you want to know more, please type 'I want to know more about EC' or 'I want to know more about Electrical engineering'" ]
+        },
+        {"tag": "ec_electrical_details",
+         "patterns": ["What is electrical engineering?", "What is Ec Engineering?", "What is electronics and communication engineering", "I want to know more about EC", "I want to know more about Electrical engineering"],
+         "responses": ["Well it is a wide field to explore. A good thing about it is the freedom, as you can work on both hardware and software. To put it simply, electrical engineers deal with supply and the flow of power and electronics engineer work on making different electrical devices. If you are interested then I will sign you up for our newsletter. Are you interested?"]
+        },
+        {"tag": "electrical_engineer",
+         "patterns": ["Who is an electrical engineer?"],
+         "responses": ["An electrical engineer is someone who designs and develops new electrical systems, solves problems and tests equipment."]
+        },
+        {"tag": "EC_engineer",
+         "patterns": ["Who is an EC engineer?", "Who is an electronics engineer?"],
+         "responses": ["Electronic engineering (also called electronics and communications engineering) is an electrical engineering discipline which utilizes nonlinear and active electrical components such as semiconductor devices, especially transistors, diodes and integrated circuits, to design electronic circuits, devices, VLSI devices and their systems."]
+        },
+        {"tag": "mechanical",
+         "patterns": ["I like machines", "I am interested in aerophysics", "I am interested in simulation", "I want to learn about simulation", "I am interested in ", "I am interested in manufacturing", "I am interested in machine designing", "I am interested in designing", "I want to learn more about system controls and dynamics"],
+         "responses": ["I am getting what you are interested in. You may be interested to be in Mechanical department of engineering which has many more areas of study. If you want to know more, please type 'I want to know more about Mechanical engineering engineering'"]
+        },
+        {"tag": "mechanical_engineer",
+         "patterns": ["Who is a mechanical engineer?"],
+         "responses": ["Mechanical engineers design power-producing machines, such as electric generators, internal combustion engines, and steam and gas turbines, as well as power-using machines, such as refrigeration and air-conditioning systems."]
+        },
+        {"tag": "mechanical_details",
+         "patterns": ["What is mechanical engineering?", "I want to know more about mechanical engineering"],
+         "responses": ["A career in Mechanical Engineering allows you to build a bright future for you and for the world. It is a creative profession, with an emphasis on designing, simulating and improving the world we live in. There are many more things we can talk about Mechanical Engineering, if you are interested then I will sign you up for our newsletter. Are you interested?"]
+        },
+        {"tag": "civil",
+         "patterns": ["I want to be a builder", "My father works in construction business", "I want to learn about construction management", "I want to learn about construction", "I want to know more about building materials", "I want to know about designing structures", "I want to know about planning", "I want to build buildings"],
+         "responses": ["I am getting what you are interested in. You may be interested to be in Civil department of engineering which has many more areas of study. If you want to know more, please type 'I want to know more about Civil engineering engineering'"]
+        },
+        {"tag": "civil_engineer",
+         "patterns": ["Who is a civil engineer?"],
+         "responses": ["Civil engineers conceive, design, build, supervise, operate, construct and maintain infrastructure projects and systems in the public and private sector, including roads, buildings, airports, tunnels, dams, bridges, and systems for water supply and sewage treatment."]
+        },
+        {"tag": "civil_details",
+         "patterns": ["What is civil engineering?", "I want to know more about Civil engineering"],
+         "responses": ["Civil Engineers deal with all the infrasctuctures that we live in. Their line of work require the knowledge of construction industries. If you are interested then I will sign you up for our newsletter. Are you interested?"]
+        },
+        {"tag": "food_details",
+         "patterns": ["What is food engineering?", "I want to know more about food engineering",  "Give some information about food technology"],
+         "responses": ["Food technology is a branch of food science that deals with the production, preservation, quality control and research and development of food products.", "Food technology is the application of food science to the selection, preservation, processing, packaging, distribution, and use of safe food. Related fields include analytical chemistry, biotechnology, engineering, nutrition, quality control, and food safety management."]
+        },
+        {"tag": "Aeronautical_details",
+         "patterns": ["What is Aeronautical engineering?", "I want to know more about aeronautical engineering",  "Give some information about aeronautical technology"],
+         "responses": ["Aeronautical engineering degrees represent the branch of engineering that deals with the research, design, development, construction, testing.", "Aeronautical Engineering is the study, design, and construction of flight-capable machinery, as well as the techniques for operating airplanes and aircraft."]
+        },
+        {"tag": "Agree_details",
+         "patterns": ["What is Agreeculture engineering?", "I want to know more about Agreeculture engineering",  "Give some information about Agreeculture technology"],
+         "responses": ["Agricultural engineering, also known as agricultural and biosystems engineering, is the field of study and application of engineering science and designs principles for agriculture purposes."]
+        },
+         {"tag": "Artificial_details",
+         "patterns": ["What is Artificial Intelligence and Data Science engineering?", "I want to know more about Artificial Intelligence and Data Science engineering",  "Give some information about Artificial Intelligence and Data Science technology"],
+         "responses": ["Artificial Intelligence and Data Science is a new branch of study that deals with scientific methodologies, processes, and techniques drawn from different domains like statistics, cognitive science, and computing and information science to extract knowledge from structured data and unstructured data."]
+        },
+        {"tag": "IOT_details",
+         "patterns": ["What is IOT ?", "I want to know more about IOT ",  "Give some information about IOT "],
+         "responses": ["IoT software engineering refers to the systematic development of IoT infrastructure using a blend of software and hardware solutions."]
+        },
+         {"tag": "cyber_details",
+         "patterns": ["What is  Cyber Security ?", "I want to know more about  Cyber Security ",  "Give some information about Cyber Security "],
+         "responses": ["Cybersecurity engineers, sometimes called information security engineers, identify threats and vulnerabilities in systems and software, then apply their skills to developing and implementing high-tech solutions to defend against hacking, malware and ransomware, insider threats and all types of cybercrime."]
+        },
+         {"tag": "Bolock_chain_details",
+         "patterns": ["What is  Block Chain?", "I want to know more about  Block Chain ",  "Give some information about Block Chain "],
+         "responses": ["Blockchain technology is an advanced database mechanism that allows transparent information sharing within a business network. A blockchain database stores data in blocks that are linked together in a chain."]
+        },
+         {"tag": "College_location",
+         "patterns": ["Give me the location of college.", "I want to know address of college"],
+         "responses": ["Ashta, Dist. Sangli, Maharashtra,  416301", "ADCET's campus is spread over 25 acres in the heart of the city of Ashtha, Sangli, where 3000 undergraduate students build their lifelong friendships and connections while enjoying their educational journey."]
+        },
+         {"tag": "College_time",
+         "patterns": ["Tell me the daily working duration of college"],
+         "responses": ["Monday - Saturday [09:00 am - 06:30 pm]"]
+        },
+        {"tag": "College_info",
+         "patterns": ["Tell me something about the college.", "In which year college started", "When the college established", "how many years have completed to college"],
+         "responses": ["Established in 1999, ADCET, Ashta is an Autonomous institute affiliated to Shivaji University, Kolhapur, Maharashtra and approved by AICTE, New Delhi. The institute is NAAC accredited with “A” grade, ISO 9001:2015 certified and runs programmes accredited by NBA, New Delhi. The community and culture of ADCET, Ashta are enriched by active bright students, dedicated teachers, and commitment to impart quality education in Engineering."]
+        },
+        
+         {"tag": "College_achievement",
+         "patterns": ["Tell me something about the college achievement.", "Is ADCET autonomous?", "Is ADCET NAAC 'A' graded institute ? ", "which affiliations ADCET has achieved since 1999? "],
+         "responses": ["ADCET, Ashta is an Autonomous institute affiliated to Shivaji University, Kolhapur, Maharashtra and approved by AICTE, New Delhi. The institute is NAAC accredited with “A” grade, ISO 9001:2015 certified and runs programmes accredited by NBA, New Delhi. "]
+        },
+         {"tag": "Fee_structure",
+         "patterns": ["Give me some information about the college fees.", "How much amount do we need to pay to take admission in ADCET? "],
+         "responses": ["FEES charged by the Institute : Rs 1,07000/- (One Lakh Seven Thousand only). For Catagory Students : As applicable, Scholarship granted by Govt. of Maharashtra. will be deducted from the total fees, rest the students have to pay at the time of admission. "]
+        },
+         {"tag": "Seats_available",
+         "patterns": ["What is total intake of Adcet for different different branches?"],
+         "responses": ["ADCET offers all most around 720 seats in different different branches. "]
+        },
+         {"tag": "Seats_cse",
+         "patterns": ["What is the intake for CSE department? "],
+         "responses": [" Computer Science & Engg: 120"]
+        },
+         {"tag": "Seats_mech",
+         "patterns": ["What is the intake for Mechanical department? "],
+         "responses": [" Mechanical Engg: 120"]
+        },
+         {"tag": "Seats_ele",
+         "patterns": ["What is the intake for Electrical department? "],
+         "responses": [" Electrical Engg: 120"]
+        },
+         {"tag": "Seats_civil",
+         "patterns": ["What is the intake for Civil department? "],
+         "responses": [" Civil Engg: 60"]
+        },
+         {"tag": "Seats_aero",
+         "patterns": ["What is the intake for Aeronautical department? "],
+         "responses": [" Aeronautical Engg: 60"]
+        },
+         {"tag": "Seats_food",
+         "patterns": ["What is the intake for Food department? "],
+         "responses": [" Food Tech: 60"]
+        },
+         {"tag": "Seats_artidata",
+         "patterns": ["What is the intake for Artificial Intelligence and Data Science department? "],
+         "responses": [" Artificial Intelligence and Data Science: 60"]
+        },
+         {"tag": "Seats_IOT",
+         "patterns": ["What is the intake for Computer Science and Engg.(IoT and Cyber Security including Block Chain Technology) "],
+         "responses": [" Computer Science and Engg.(IoT and Cyber Security including Block Chain Technology): 60"]
+        },
+         {"tag": "Seats_agree",
+         "patterns": ["What is the intake for Agreeculture department? "],
+         "responses": [" Agreeculture Engg: 60"]
+        },
+        {"tag": "College_events",
+         "patterns": ["Which events does college organise? ", "Tell me about college events", " Is there any event organised by college every year?"],
+         "responses": [" College organise SNEHA event every year for all  as well as SPORT WEEK coducted every year and other events organised by departments as per their schedule."]
+        },
+        {"tag": "College_facilities",
+         "patterns": ["Which facilities does college provide?", "What are the facilities provided by the college?", "Any facilities that college provide?"],
+         "responses": [" In ADCET here we provide facilities like Colleges buses, Hostel, Library, Sport Complex for Indor games , for outdor games we have huge playground."]
+        },
+        {"tag": "College_director",
+         "patterns": ["Who is the director of college ?", " Tell me the name of college director"],
+         "responses": ["DR. VIKRAM S. PATIL "]
+        },
+         {"tag": "College_exdirector",
+         "patterns": ["Who is the executive director of college ?", " Tell me the name of college executive director"],
+         "responses": ["PROF. R.A.KANAI "]
+        },
+         {"tag": "College_Secretary",
+         "patterns": ["Who is the executive Secretary of college ?", " Tell me the name of college Secretary"],
+         "responses": ["ADV. RAJENDRA R DANGE"]
+        },
+        {"tag": "College_Founder",
+         "patterns": ["Who is the Founder of college ?", " Tell me the name of college Founder"],
+         "responses": ["SHRI. ANNASAHEB DANGE"]
+        },
+        {"tag": "CSE_hod",
+         "patterns": ["Who is the hod of cse department ?", " Tell me the name of cse hod"],
+         "responses": ["MR. SUHEL S SAYYAD "]
+        },
+         {"tag": "CSE_placement",
+         "patterns": ["Who is the training and placement officer of cse department ?"],
+         "responses": ["MR. Yogesh Lubal "]
+        },
+        {"tag": "CSE_dean",
+         "patterns": ["Who is the dean of cse department ?"],
+         "responses": [""]
+        },
+         {"tag": "CSE_places",
+         "patterns": ["What is the count of placed student in cse department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+
+         {"tag": "Mech_hod",
+         "patterns": ["Who is the hod of Mechanical department ?", " Tell me the name of Mechanical hod"],
+         "responses": ["Mr. M. M. Jadhav."]
+        },
+         {"tag": "Mech_placement",
+         "patterns": ["Who is the training and placement officer of Mechanical department ?"],
+         "responses": [" Mr. Santosh Ghutugade, Mr. Girish Pawar, Mr. Ghanshyam Chendake "]
+        },
+        {"tag": "Mech_dean",
+         "patterns": ["Who is the dean of Mechanical department ?"],
+         "responses": [""]
+        },
+         {"tag": "Mech_places",
+         "patterns": ["What is the count of placed student in Mechanical department ?"],
+         "responses": [" You can visit our traning and placement cell for enquiry"]
+        },
+
+        {"tag": "Civil_hod",
+         "patterns": ["Who is the hod of Civil department ?", " Tell me the name of Civil hod"],
+         "responses": [" Mr. S. S. Mohite."]
+        },
+         {"tag": "Civil_placement",
+         "patterns": ["Who is the training and placement officer of Civil department ?"],
+         "responses": ["Mr. A. G. Mujavar. "]
+        },
+        {"tag": "Civil_dean",
+         "patterns": ["Who is the dean of Civil department ?"],
+         "responses": [""]
+        },
+         {"tag": "Civil_places",
+         "patterns": ["What is the count of placed student in Civil department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+
+        {"tag": "ele_hod",
+         "patterns": ["Who is the hod of Electrical department ?", " Tell me the name of Electrical hod"],
+         "responses": [" Dr. Kamatchikanan"]
+        },
+         {"tag": "ele_placement",
+         "patterns": ["Who is the training and placement officer of Electrical department ?"],
+         "responses": [" Mr. Prashant Mali"]
+        },
+        {"tag": "Electrical_dean",
+         "patterns": ["Who is the dean of Electrical department ?"],
+         "responses": [""]
+        },
+         {"tag": "Electrical_places",
+         "patterns": ["What is the count of placed student in Electrical department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+
+         {"tag": "food_hod",
+         "patterns": ["Who is the hod of food department ?", " Tell me the name of food hod"],
+         "responses": ["Mr. V. D. Talnikar "]
+        },
+         {"tag": "food_placement",
+         "patterns": ["Who is the training and placement officer of food department ?"],
+         "responses": [" Mr. Sumit Potdar "]
+        },
+        {"tag": "Food_dean",
+         "patterns": ["Who is the dean of Food department ?"],
+         "responses": [""]
+        },
+         {"tag": "Food_places",
+         "patterns": ["What is the count of placed student in Food department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+
+         {"tag": "aero_hod",
+         "patterns": ["Who is the hod of Aeronautical department ?", " Tell me the name of Aeronautical hod"],
+         "responses": [" Mr. K. M. Kiran Babu."]
+        },
+         {"tag": "aero_placement",
+         "patterns": ["Who is the training and placement officer of Aeronautical department ?"],
+         "responses": [" Mr. L. Oblisamy"]
+        },
+        {"tag": "Aeronautical_dean",
+         "patterns": ["Who is the dean of Aeronautical department ?"],
+         "responses": [" "]
+        },
+         {"tag": "Aeronautical_places",
+         "patterns": ["What is the count of placed student in Aeronautical department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+
+        {"tag": "agri_hod",
+         "patterns": ["Who is the hod of Agricultural department ?", " Tell me the name of Agricultural hod"],
+         "responses": [" "]
+        },
+         {"tag": "agri_placement",
+         "patterns": ["Who is the training and placement officer of Agricultural department ?"],
+         "responses": [" "]
+        },
+        {"tag": "Agriculture_dean",
+         "patterns": ["Who is the dean of Agriculturedepartment ?"],
+         "responses": [""]
+        },
+         {"tag": "Agriculture_places",
+         "patterns": ["What is the count of placed student in Agriculture department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+
+        {"tag": "arti_hod",
+         "patterns": ["Who is the hod of Artificial Intelligence and Data Science department ?", " Tell me the name of Artificial Intelligence and Data Science hod"],
+         "responses": [" Mr. Krishnakumar"]
+        },
+         {"tag": "arti_placement",
+         "patterns": ["Who is the training and placement officer of Artificial Intelligence and Data Science department ?"],
+         "responses": [" "]
+        },
+         {"tag": "Artificial Intelligence and Data Science_dean",
+         "patterns": ["Who is the dean of Artificial Intelligence and Data Science department ?"],
+         "responses": [""]
+        },
+         {"tag": "Artificial Intelligence and Data Science_places",
+         "patterns": ["What is the count of placed student in Artificial Intelligence and Data Science department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+         {"tag": "IoT_hod",
+         "patterns": ["Who is the hod of Computer Science and Engg(IoT, cyber Security including Block chain technology) department ?", " Tell me the name of Computer Science and Engg(IoT, cyber Security including Block chain technology) hod"],
+         "responses": [" Mr. R. S. Mani"]
+        },
+         {"tag": "IoT_placement",
+         "patterns": ["Who is the training and placement officer of Computer Science and Engg(IoT, cyber Security including Block chain technology) department ?"],
+         "responses": [" "]
+        },
+         {"tag": "IoT,Cyber Security including Block Chain Technology_dean",
+         "patterns": ["Who is the dean of IoT,Cyber Security including Block Chain Technology department ?"],
+         "responses": [""]
+        },
+         {"tag": "IoT,Cyber Security including Block Chain Technology_places",
+         "patterns": ["What is the count of placed student in IoT,Cyber Security including Block Chain Technology department ?"],
+         "responses": ["You can visit our traning and placement cell for enquiry"]
+        },
+        {"tag": "Company_placement",
+         "patterns": ["Which companies come to ADCET for placements?", "tell me the names of companies which come campus drives?", "which companies come to your college?", "Give me the list of the companies visit to ADCET for placements"],
+         "responses": [" Tata Consultancy Services(TCS), KPIT, Wipro, Capgemini, Tech Mahindra, Sankey, SLK, Kolbro, Indovance, Wipro Pari, Persistent, Hexaware etc."]
+        },
+         {"tag": "college_alumini",
+         "patterns": ["Tell me the names of some aluminies of college"],
+         "responses": [" Here are the names of some aluminies who did fabulous work  Jiganesh Patil placed in Amazon recieved package of 40 lakhs "]
+        },
+
+        {"tag": "newsletter_yes",
+         "patterns": ["yes i would like to", "yes please", "yes please do", "yes"],
+         "responses": ["Ok then, please register yourself in the following link. Hope I was helpful. ---(Type 'quit' to terminate the program)"]
+        },
+        {"tag": "newsletter_no",
+         "patterns": ["No", "No thank you", "No please", "no need"],
+         "responses": ["Ok then, hope I was helpful. ---(Type 'quit' to terminate the program)"]
+        },
+         {"tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+        },
+
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "No, that's it"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+        }
+   ]
+}
